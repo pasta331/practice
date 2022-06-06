@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>tytuł strony - wyświetla się w zakładce </title>
+    </head>
+<body>
+    <h1> Nagłówek pierwszego poziomu - h1 </h1>
+    <p>paragraf 1 <b>HTML</b> to skrót od <i>HyperText Markup Language</i> </p>
+    <p> Każdy paragraf czyli akapit jest wyświetlany w osobnym wierszu </p>
+    <p><b>Pogrubienie</b> - wstawiamy dane pomiędzy tagi b - bold</p>
+    <p><i>Kursywa</i> - wstawiamy dane pomiędzy tagi i - italic</p>
+    <p>Indeks dolny - np. CO<sub>2</sub> - tagujemy poprzez sub</p>
+    <p>Indeks górny - np. mc<sup>2</sup> - tagujemy poprzez sup</p>
+    <p> Aby dodać spację tagujemy br - np. <br />Ten znacznik stanowi element pusty - 
+    znacznik jest jednocześnie otwierający jak i zamykający </p>
+    <p> Przerwa pomiędzy akapitami w postaci linii - znacznik hr np. <hr /></p>
+    <h2> Listy uporządkowane i nieuporządkowane - Nagłówek drugiego poziomu - h2 </h2>
+    <h3>Listy uporządkowane - nagłowek h3</h3>
+    <ol>
+        <li>Dzielą się na ol - order lists i ul - unorder list</li>
+        <LI>Listy uporządkowane są numerowane</LI>
+        <li>Można to modyfikować w CSS lub użyć typu w ol - pierwze rozwiązanie jest lepsze</li>
+        <li>Każdy kolejny punkt oznaczamy - li - list item</li>
+    </ol>
 
+    <h3> Listy nieuporządkowane</h3>
+    <ul>
+        <li>tworzymy podobnie jak te numerowane</li>
+        <li> listy nieuporządkowane są punktowane</li>
+        <li>tutaj również występują typu ul (kwadraty, kółka etc., ale zalecają użycie CSS</li>
+        <li>istnieje również opcja zagnieżdżania list
+            <ul>
+                <li>w tym celu tworzymy znacznik ul wewnątrz li</li>
+                <li>wewnątrz ul tworzymy kolejne li</li>            
+            </ul>
+
+        </li>
+    </ul>
+
+    <h3>Listy definicji - nagłówek h3 </h3>
+    <dl>
+        <dt>Lista definicji</dt>
+        <dd>Tworzymy z użyciem znacznik dl - definition list, w którym umieszczamy znacznik dt
+            - definition term, czyli słowo którego definicję będziemy podawać. Definicję tagujemy 
+            znacznikiem dd.
+        </dd>
+    </dl>
+
+    <h2> Łącza </h2>
+    <p>Łącze tworzymy znacznikiem a href="tu wskazujemy adres strony". Po zamknięciu znacznika 
+        wskazujemy tekst w które należy kliknąć aby otworzyć hiperłącze.
+    </p>
+    <a href="file:///C:/Users/pauli/Desktop/Duckett%20J.%20-%20HTML%20i%20CSS.%20Zaprojektuj%20i%20zbuduj%20witryn%C4%99%20WWW.pdf">
+        Łączę do książki</a>
+
+    <p>Łącza możemy utworzyć w listach uporządkowanych/nieuporządkowanych jn.:
+        <ul>
+            <li><a href="index.html">Strona główna</a> - odnośnik do tej strony głównej</li>
+            <li><a href="about-us.html">O nas</a> - odnośnik do innego pliku html o nazwie about-us, któy nie istnieje</li>
+        </ul>
+    </p>
+
+
+    <p>Może być 6 rodzajów nagłówków od h1 do h6</p>
+    <h6> Nagłówek h6 </h6>
+</body>
+
+</HTML>
