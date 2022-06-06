@@ -4,7 +4,7 @@
         <title>tytuł strony - wyświetla się w zakładce </title>
     </head>
 <body>
-    <h1> Nagłówek pierwszego poziomu - h1 </h1>
+    <h1 id="top"> Nagłówek pierwszego poziomu - h1 </h1>
     <p>paragraf 1 <b>HTML</b> to skrót od <i>HyperText Markup Language</i> </p>
     <p> Każdy paragraf czyli akapit jest wyświetlany w osobnym wierszu </p>
     <p><b>Pogrubienie</b> - wstawiamy dane pomiędzy tagi b - bold</p>
@@ -56,13 +56,28 @@
     <p>Łącza możemy utworzyć w listach uporządkowanych/nieuporządkowanych jn.:
         <ul>
             <li><a href="index.html">Strona główna</a> - odnośnik do tej strony głównej</li>
-            <li><a href="about-us.html">O nas</a> - odnośnik do innego pliku html o nazwie about-us, któy nie istnieje</li>
+            <li><a href="about us/about-us.html">O nas</a> - odnośnik do podkatalogu w folderze about us</li>
+            <li><a href="https://www.coursera.org/" target="_blank">Coursera</a> - odnośnik do strony zewnątrzej - po kliknięciu
+            otwiera się w nowej karce</li>
+            <li><a href="#top">Do góry</a> - odnośnik do początku strony</li>
         </ul>
     </p>
 
-
     <p>Może być 6 rodzajów nagłówków od h1 do h6</p>
     <h6> Nagłówek h6 </h6>
+
+    <h2> Obrazy</h2>
+    <figure>
+    <img src="images/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="opis obrazu kiedy ten nie jest widoczny - atrybut alt"
+    title="dodatkowe informacje o obrazie - atrybut title"> 
+    <figcaption>znacznik figcaption pozwala dodać opis do obrazka</figcaption>
+    </figure>
+
+    <h3> Pozostałe:</h3>
+    <ul>
+        <li><a href="tables/tables.html">Tabele</a></li>
+    </ul>
+
 </body>
 
 </HTML>
