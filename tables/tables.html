@@ -5,5 +5,109 @@
 </head>
 <body>
     <h1>Tworzenie tabel</h1>
+    <ul>
+        <li> Tworzymy tabelę za pomocą znacznika <b>table</b></li>
+        <li>Początek nowego wiersza - <b>tr</b>- table row</li>
+        <li>Każda komórka to <b>td</b>- table data. Tyle ile pozycji będzie miał kolejny wiersz, tyle znaczników trzeba dodać</p>
+    </ul>
+<h2>Tabela nr 1</h2>
+<p>4 kolumny po 3 wiersze, dwie ostatnie puste</p>
+<table>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>10</td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<h2>Tabela nr 2 - z nagłówkami</h2>
+<ul>
+    <li>Nagłówek tabeli - <b>th</b>-table heading</li>
+    <li>Atrybut <b>scope="row/col"</b>- wskazujemy czy nagłówek dotyczy wiersza czy kolumny</li>
+</ul>
+<br /><br /><br />
+
+<table>
+    <tr>
+        <th></th>
+        <th scope="col">Kolumna 1 nagłówek</th>
+        <th scope="col">Kolumna 2 nagłówek</th>
+    </tr>
+    <tr>
+        <th scope="row">Wiersz 1 nagłówek</th>
+        <td>wartość 1</td>
+        <td>wartość 2</td>
+    </tr>
+    <tr>
+        <th scope="row">Wiersz 2 nagłówe</th>
+        <td> Wartość 3</td>
+        <td>wartość 4</td>
+    </tr>
+
+</table>
+<br /> <br />
+<h2>Tabela nr 3 - łączenie z sąsiadującymi kolumnami i wierszami</h2>
+<ul>
+    <li>Atrybut <b>colspan="ile kolumn ma zajmować dana komórka"</b></li>
+    <li>Atrybut <b>rowspan="ile wierszy ma zajmować dana komórka</b></li>
+</ul>
+<br /><br />
+<table>
+    <tr>
+        <th></th>
+        <th>9:00</th>
+        <th>10:00</th>
+        <th>11:00</th>
+        <th>12:00</th>
+    </tr>
+    <tr>
+        <th>poniedziałek</th>
+        <td colspan="2">geografia</td>
+        <td>matematyka</td>
+        <td>fizyka</td>
+
+    </tr>
+    <tr>
+        <th>wtorek</th>
+        <td colspan="3">WF</td>
+        <td>historia</td>
+    </tr>
+    <tr>
+        <th>środa</th>
+        <td rowspan="2">polski</td>
+        <td>muzyka</td>
+        <td colspan="1">plastyka</td>
+        
+    </tr>
+    <tr>
+        <th>czwartek</th>
+        <td>wos</td>
+        <td>religia</td>
+        <td>WF</td>
+    </tr>
+</table>
+<br /><br /><br />
+<p> Przy dużych tabelach warto nadać im strukturę podzieloną na poniższe sekcje
+    <ul>
+        <li><b>thead</b>- tu umieszczamy nagłówki kolumn</li>
+        <li><b>tbody</b>- główna zawartość tabeli</li>
+        <li><b>tfoot</b>- stopka lub podsumowanie tabeli</li>
+    </ul>
+</p>
+<hr />
+
+<h3><a href="../index.html">Powrót</a></h3>
 </body>
 </html>
