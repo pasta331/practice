@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularze</title>
+    </head>
+    <body>
+        <h1>Tworzenie formularzy</h1>
+        <h2>Dodawanie tekstu:</h2>
+        <ul>
+            <li>Pola tekstowe (jednowierszowe)</li>
+            <li>Pola hasła</li>
+            <li>Pola tekstowe (wielowierszowe)</li>            
+        </ul>
+        <h2>Dokonywanie wyborów:</h2>
+        <ul>
+            <li>Przyciski opcji - wybór jednej w wielu</li>
+            <li>Pola wyboru - wybór jednej lub kilku</li>
+            <li>Listy rozwijalne - wybór jednej z listy</li>
+
+        </ul>
+        <h2>Przesyłanie formularzy:</h2>
+        <ul>
+            <li>Przycisk przesyłający - przenosi dane na serwer</li>
+            <li>Przycisk graficzny - jw. ale można w nim stosować obrazki</li>
+            <li>Przesyłanie plików - pole z możliwością dodania załącznika, który trafia na serwer</li>
+        </ul>
+        <br /><br /><br />
+        <h2>Struktura formularzy</h2>
+        <p><b>Form</b>- wewnątrz tego znacznika umieszczamy wszystkie elementy formularzy </p>
+        <p><b>Action</b> - atrybut znacznika form, w którym wskazujemy adres URL strony na serwerze, do której 
+        należy przekazać dane z formularza</p>
+        <p><b>Method</b>
+        <ul>
+            <li><b>get</b> - krótkie formularze/wyłącznie pobieranie danych z serwera. Jest to metoda domyślna</li>
+            <li><b>post</b> - przesyłanie plików w formularzu/duży formularz/wrażliwe dane/dodanie lub usunięcie
+            informacji na bazie</li>
+        </ul></p>
+        <h3>Pola tekstowe</h3>
+        <p><b>INPUT</b> - tworzymy pole .</p>
+        <p>Każdy input ma określony typ <b>TYPE</b></p>
+        <ul>
+            <li><b>text</b></li>
+            <li><b>password</b></li>
+            <li><b>textarea</b></li>
+        </ul>
+    
+        <br /><br /><br /><br />
+        <!--komentarz-->
+        <h1>FORMULARZ</h1>
+        <form action="http://www.przyklad.com/login.php">
+            <p>Nazwa użytkownika:
+                <input type="text" name="username">
+            </p>
+            <p>Hasło:
+                <input type="password" name="password">
+            </p>
+            <p>Komentarz</p>
+            <textarea name="comments"></textarea>
+            <h4>Przyciski opcji</h4>
+            <p>Wybierz ulubiony kolor:
+                <input type="radio" name="colour" value="czerwony" />czerwony
+                <input type="radio" name="colour" value="czarny" />czarny
+                <input type="radio" name="colour" value="biały" />biały
+             </p>
+             <p>Wybierz produkt:
+                 <input type="checkbox" name="product"value="kubek" />kubek
+                 <input type="checkbox" name="product"value="długopis" />długopis
+                 <input type="checkbox" name="product"value="brelok" />brelok
+             </p>
+             <p>Miasto:</p>
+             <select name="city">
+                 <option value="Wrocław">Wrocław</option>
+                 <option value="Warszawa" selected>Warszawa</option>
+                 <option value="Kraków">Kraków</option>
+             </select>
+             <p>Prześlij plik:
+                 <input type="file" name="attachment" />
+                 <input type="submit" name="Subscribe" value="załącz" />
+             </p>
+             <fieldset>
+                 <p>Wyszukaj</p>
+                 <input type="search" />
+                 <input type="submit" value="wyszukaj" />
+             </fieldset>
+        </form>
+
+        
+
+
+
+    </body>
+</html> 
